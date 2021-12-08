@@ -9,28 +9,32 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="mainWindow"> <!--calculator frame div-->
-        <div id="history" class="longflex"></div>
-        <div id="result" class="longflex"></div> <!--output window-->
-        <div class="longflex">
-            <div onclick="clr()" class="clr-btn">clear</div>
-            <div onclick="sw()" id="switch">switch</div>
+    <div class="mainWindow">
+        <div class="topBox">
+            <div id="history" class="longflexT"></div>
+            <div id="result" class="longflexT"></div>
+            <div class="longflexT">
+                <div onclick="clr()" class="clrBtn">clear</div>
+                <div onclick="sw()" id="switch">switch</div>
+            </div>
         </div>
-        <div class="longflex">
-            <div onclick="calc(0.25)" class="numBtn">1/4</div>
-            <div onclick="calc(0.5)" class="numBtn">1/2</div>
-            <div onclick="calc(1)" class="numBtn">1</div>
+        <div class="numBox">
+            <div class="longflexN">
+                <div onclick="calc(0.25)" class="numBtn">1/4</div>
+                <div onclick="calc(0.5)" class="numBtn">1/2</div>
+                <div onclick="calc(1)" class="numBtn">1</div>
+            </div>
+            <div class="longflexN">
+                <div onclick="calc(2)" class="numBtn">2</div>
+                <div onclick="calc(3)" class="numBtn">3</div>
+                <div onclick="calc(4)" class="numBtn">4</div>
+            </div>
+            <div class="longflexN">
+                <div onclick="calc(5)" class="numBtn">5</div>
+                <div onclick="calc(10)" class="numBtn">10</div>
+                <div onclick="" class="numBtn">undo</div>
+            </div>
         </div>
-        <div class="longflex">
-            <div onclick="calc(2)" class="numBtn">2</div>
-            <div onclick="calc(3)" class="numBtn">3</div>
-            <div onclick="calc(4)" class="numBtn">4</div>
-        </div>
-        <div class="longflex">
-            <div onclick="calc(5)" class="numBtn">5</div>
-            <div onclick="calc(10)" class="numBtn">10</div>
-            <div onclick="" class="numBtn">undo</div>
-        </div>    
     </div>
 </body>
 </html>
