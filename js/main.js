@@ -29,6 +29,6 @@ function history(num) {
 function clr() {
     total = 0;
     arr = [];
-    display("#result",total);
+    display("#result"," ");
     history();
 }
