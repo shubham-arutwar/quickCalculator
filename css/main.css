@@ -1,4 +1,6 @@
 .mainWindow{
+    display: flex;
+    flex-direction: column;
     width: auto;
     height: 96vh;
 }
