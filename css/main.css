@@ -1,5 +1,6 @@
 .mainWindow{
     width: auto;
+    height: 96vh;
     display: flex;
     flex-direction: column;
 }
@@ -8,10 +9,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 50px;
-    width: 100% ;
+    height: 26vw;
 }
 
 .numBtn{
-    width: 26%;
+    width: 26vw;
+    height: 26vw;
 }
