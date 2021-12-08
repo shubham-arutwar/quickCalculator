@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quickCalculator</title>
     <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="main-window"> <!--calculator frame div-->
-        <div id="history"></div>
-        <div id="result"></div> <!--output window-->
-        <div class="btn-grid"> <!--button grid div-->
-            <!--clear and switch-->
+    <div class="mainWindow"> <!--calculator frame div-->
+        <div id="history" class="longflex"></div>
+        <div id="result" class="longflex"></div> <!--output window-->
+        <div class="longflex">
             <div onclick="clr()" class="clr-btn">clear</div>
             <div onclick="sw()" id="switch">switch</div>
-            <!--number buttons-->
-            <div onclick="calc(0.25)" class="num-btn">1/4</div>
-            <div onclick="calc(0.5)" class="num-btn">1/2</div>
-            <div onclick="calc(1)" class="num-btn">1</div>
-            <div onclick="calc(2)" class="num-btn">2</div>
-            <div onclick="calc(3)" class="num-btn">3</div>
-            <div onclick="calc(4)" class="num-btn">4</div>
-            <div onclick="calc(5)" class="num-btn">5</div>
-            <div onclick="calc(10)" class="num-btn">10</div>
-            <!--undo-->
-            <div onclick="" class="num-btn">undo</div>
-            <div onclick="console.log(total)" class="num-btn">run</div>
         </div>
+        <div class="longflex">
+            <div onclick="calc(0.25)" class="numBtn">1/4</div>
+            <div onclick="calc(0.5)" class="numBtn">1/2</div>
+            <div onclick="calc(1)" class="numBtn">1</div>
+        </div>
+        <div class="longflex">
+            <div onclick="calc(2)" class="numBtn">2</div>
+            <div onclick="calc(3)" class="numBtn">3</div>
+            <div onclick="calc(4)" class="numBtn">4</div>
+        </div>
+        <div class="longflex">
+            <div onclick="calc(5)" class="numBtn">5</div>
+            <div onclick="calc(10)" class="numBtn">10</div>
+            <div onclick="" class="numBtn">undo</div>
+        </div>    
     </div>
 </body>
 </html>

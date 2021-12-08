@@ -1,0 +1,17 @@
+.mainWindow{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.longflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100% ;
+}
+
+.numBtn{
+    width: 26%;
+}
