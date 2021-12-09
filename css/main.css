@@ -6,17 +6,23 @@
 }
 
 .topBox{
-    height: 43vh;
+    height: 53vh;
     display: flex;
     flex-direction: column;
 }
 
 .longflexT{
     width: 96vw;
+    min-height: 20vw;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: lightskyblue;
+}
+
+.splBtn{
+    max-height: 26vw;
 }
 
 .clrBtn{
@@ -33,10 +39,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: lightskyblue;
 }
 
 .numBtn{
     text-align: center;
     width: 26vw;
     height: 26vw;
+    background-color: cadetblue;
 }
