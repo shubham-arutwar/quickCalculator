@@ -15,14 +15,17 @@
     width: 96vw;
     min-height: 20vw;
     flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     background-color: lightskyblue;
 }
 
 .splBtn{
+    width: 96vw;
+    min-height: 20vw;
+    background-color: lightskyblue;
     max-height: 26vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .splBtn div{
