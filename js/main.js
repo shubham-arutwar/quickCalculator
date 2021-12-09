@@ -32,3 +32,7 @@ function clr() {
     display("#result"," ");
     history();
 }
+
+$(document).on('touchstart', function(e) {
+    e.preventDefault();
+});
