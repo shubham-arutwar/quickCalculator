@@ -33,6 +33,6 @@ function clr() {
     history();
 }
 
-$(document).on('touchstart', function(e) {
+(document).on('touchstart', function(e) {
     e.preventDefault();
 });
