@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
 
 body{
     background-color: #283149;
@@ -12,16 +12,30 @@ body{
 }
 
 .topBox{
-    height: 53vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Noto Sans Mono', monospace;
+    color: #DBEDF3;   
 }
 
 .longflexT{
-    width: 96vw;
-    min-height: 20vw;
-    flex-grow: 1;
+    padding: 5vw;
+    width: 86vw;
     background-color: #404B69;
+}
+
+#history{
+    height: 40vw;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
+}
+
+#result{
+    height: 12vw;
+    text-align: right;
+    font-size: xx-large;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
 }
 
 .splBtn{
@@ -57,6 +71,7 @@ body{
 
 .sw{
     background-color: #404B69;
+    color: #DBEDF3;
     font-size: large;
     font-weight: 200;
 }
@@ -75,6 +90,7 @@ body{
     width: 24vw;
     height: 24vw;
     background-color: #404B69;
+    color: #DBEDF3;
     display: flex;
     justify-content: center;
     align-items: center;
