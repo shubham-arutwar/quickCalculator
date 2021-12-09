@@ -1,5 +1,9 @@
 var total = 0, val, x = true, arr=[];
 
+function hideBar() {
+    ('html, body').scrollTop(1);
+}
+
 function sw() {
     if (x == true) {
         x = false;
@@ -35,4 +39,8 @@ function clr() {
 
 (document).on('touchstart', function(e) {
     e.preventDefault();
+});
+
+('input').on('touchstart', function() {
+    $(this).focus();
 });
