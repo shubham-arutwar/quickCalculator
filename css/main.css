@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap');
+
+body{
+    background-color: #283149;
+}
+
 .mainWindow{
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 96vw;
     height: 96vh;
 }
 
@@ -15,38 +21,65 @@
     width: 96vw;
     min-height: 20vw;
     flex-grow: 1;
-    background-color: lightskyblue;
+    background-color: #404B69;
 }
 
 .splBtn{
-    width: 96vw;
-    min-height: 20vw;
-    background-color: lightskyblue;
-    max-height: 26vw;
+    margin: 0 auto 0 auto;
+    height: 28vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    background-color: #283149;
+    border-radius: 13vw;
 }
 
 .splBtn div{
+    margin: 2vw 1.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    font-family: 'Fira Mono', monospace;
+}
+
+.clrBtn{
+    background-color: #DA0463;
+    font-size: large;
+    font-weight: 500;
+}
+
+.status{
+    background-color: #404B69;
+}
+
+.sw{
+    background-color: #404B69;
+    font-size: large;
+    font-weight: 200;
 }
 
 .longflexN{
     width: 96vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: lightskyblue;
-}
-
-.numBtn{
-    width: 26vw;
-    height: 26vw;
-    background-color: cadetblue;
+    height: 28vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #283149;
+}
+
+.numBtn{
+    margin: 0 1.5vw;
+    width: 24vw;
+    height: 24vw;
+    background-color: #404B69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: 'Fira Mono', monospace;
+    font-size: large;
+    font-weight: 200;
 }

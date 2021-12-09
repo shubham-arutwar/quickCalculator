@@ -13,10 +13,11 @@
         <div class="topBox">
             <div id="history" class="longflexT"></div>
             <div id="result" class="longflexT"></div>
-            <div class="splBtn">
-                <div onclick="clr()" class="clrBtn">clear</div>
-                <div onclick="sw()" id="switch">switch</div>
-            </div>
+        </div>
+        <div class="splBtn">
+            <div onclick="clr()" class="clrBtn">AC</div>
+            <!-- <div onclick="sw()" id="status" class="status">+</div> -->
+            <div onclick="sw()" class="sw">+/-</div>
         </div>
         <div class="numBox">
             <div class="longflexN">
@@ -32,7 +33,7 @@
             <div class="longflexN">
                 <div onclick="calc(5)" class="numBtn">5</div>
                 <div onclick="calc(10)" class="numBtn">10</div>
-                <div onclick="" class="numBtn">undo</div>
+                <div onclick="sw()" id="status" class="numBtn">+</div>
             </div>
         </div>
     </div>

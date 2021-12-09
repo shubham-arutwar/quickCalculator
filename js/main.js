@@ -3,10 +3,10 @@ var total = 0, val, x = true, arr=[];
 function sw() {
     if (x == true) {
         x = false;
-        display("#switch","Substraction");
+        display("#status","-");
     } else {
         x = true;
-        display("#switch","Addition");
+        display("#status","+");
     }   
 }
 
