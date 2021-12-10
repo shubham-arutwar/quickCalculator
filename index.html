@@ -8,11 +8,11 @@
     <script src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body onload="hideBar()">
+<body>
     <div class="mainWindow">
         <div class="topBox">
             <div id="history" class="longflexT"></div>
-            <div id="result" class="longflexT"></div>
+            <div id="result" class="longflexT">0</div>
         </div>
         <div class="splBtn">
             <div onclick="clr()" class="clrBtn">AC</div>
@@ -34,7 +34,7 @@
             <div class="longflexN">
                 <div onclick="calc(5)" class="numBtn">5</div>
                 <div onclick="calc(10)" class="numBtn">10</div>
-                <div onclick="" class="numBtn">undo</div>
+                <div onclick="undo()" id="undo" class="numBtn"></div>
             </div>
         </div>
     </div>

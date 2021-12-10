@@ -46,7 +46,7 @@ div{
 }
 
 .splBtn{
-    margin: 0 auto 0 auto;
+    margin: 2vw auto 0 auto;
     height: 28vw;
     display: flex;
     flex-direction: row;
@@ -110,9 +110,3 @@ div{
 }
 
 /*---------------------------test classes-----------------------*/
-
-.test{
-    text-decoration: none;
-    font-family: 'Fira Mono', monospace;
-    color: #DBEDF3;
-}
