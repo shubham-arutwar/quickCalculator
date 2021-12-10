@@ -17,8 +17,3 @@ body{
     font-size: large;
     font-weight: 200;
 }
-
-.numBtn:hover{
-    background-color: aquamarine;
-    transition-duration: 1000ms;
-}

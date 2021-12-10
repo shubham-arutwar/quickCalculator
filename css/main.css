@@ -73,8 +73,8 @@ div{
     font-weight: 500;
 }
 
-.status{
-    background-color: #404B69;
+#status{
+    font-size: xxx-large;
 }
 
 .sw{
