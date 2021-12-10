@@ -1,8 +1,14 @@
+/*https://colorhunt.co/palette/283149404b69da0463dbedf3*/
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
 
 body{
     cursor: default;
     background-color: #283149;
+}
+
+div{
+    -webkit-tap-highlight-color: transparent;
 }
 
 .mainWindow{

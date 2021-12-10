@@ -2,12 +2,6 @@ var total = 0, val, x = true, arr=[];
 
 function hideBar() {
     ('html, body').scrollTop(1);
-    (document).on('touchmove', function(e) {
-    e.preventDefault();
-    });
-    ('input').on('touchstart', function() {
-        $(this).focus();
-    });
 }
 
 function sw() {
@@ -42,5 +36,3 @@ function clr() {
     display("#result"," ");
     history();
 }
-
-
