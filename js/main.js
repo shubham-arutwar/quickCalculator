@@ -37,7 +37,6 @@ function clr() {
 function undo() {
     tempNum = arr.pop();
     tempOpp = arr.pop();
-    console.log(tempNum);
     if (total == 0) {
         
     } else {
