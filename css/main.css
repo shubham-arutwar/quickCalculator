@@ -108,3 +108,11 @@ div{
     font-size: large;
     font-weight: 200;
 }
+
+/*---------------------------test classes-----------------------*/
+
+.test{
+    text-decoration: none;
+    font-family: 'Fira Mono', monospace;
+    color: #DBEDF3;
+}

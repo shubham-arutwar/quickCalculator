@@ -1,0 +1,24 @@
+body{
+    background-color: #283149;
+}
+
+.numBtn{
+    cursor: pointer;
+    margin: 0 1.5vw;
+    width: 24vw;
+    height: 24vw;
+    background-color: #404B69;  
+    color: #DBEDF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: 'Fira Mono', monospace;
+    font-size: large;
+    font-weight: 200;
+}
+
+.numBtn:hover{
+    background-color: aquamarine;
+    transition-duration: 1000ms;
+}
