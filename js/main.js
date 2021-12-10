@@ -1,7 +1,7 @@
-var total = 0, val, x = true, tempNum, tempOpp, arr=[];
+let total = 0, val , x = true, arr=[];
 
 
-function calc(val) {
+let  calc = function(val) {
     enableUndo();
     x ? total = total + val : total = total - val;
 
@@ -17,7 +17,7 @@ function calc(val) {
     history();
 }
 
-function sw() {
+let sw = function() {
     if (x == true) {
         x = false;
         display("#status","-");
@@ -27,14 +27,15 @@ function sw() {
     }   
 }
 
-function clr() {
+let clr = function() {
     total = 0;
     arr = [];
     display("#result","0");
     history();
 }
 
-function undo() {
+let undo = function() {
+    let tempNum, tempOpp;
     tempNum = arr.pop();
     tempOpp = arr.pop();
     if (total == 0) {
@@ -52,21 +53,21 @@ function undo() {
     history();
 }
 
-function disableUndo() {
+let disableUndo = function() {
     if (total == 0){
         console.log("total is zero");
         display("#undo"," ");
     }
 }
 
-function enableUndo() {
+let enableUndo = function() {
     display("#undo","undo")
 }
 
-function display(divId,num) {
+let display = function(divId,num) {
     document.querySelector(divId).innerHTML = num;
 }
 
-function history(num) {
+let history = function(num) {
     document.querySelector("#history").innerHTML = arr.join(" ");
 }
