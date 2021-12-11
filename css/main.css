@@ -35,7 +35,7 @@ div{
 #history{
     display: flex;
     flex-direction: column-reverse;
-    height: 40vw;
+    height: 60vw;
     border-top-left-radius: 5vw;
     border-top-right-radius: 5vw;
     overflow-y: auto;
