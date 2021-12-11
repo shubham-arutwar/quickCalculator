@@ -35,6 +35,7 @@ var animSum = function() {
 let clr = function() {
     total = 0;
     arr = [];
+    undoAnim();
     display("#result","0");
     history();
 }
@@ -58,16 +59,26 @@ let undo = function() {
     history();
 }
 
+// let undoAnim = function() {
+//     let getUndo = document.querySelector("#undo");
+//     if (arr.length == 0){
+//         getUndo.style.backgroundColor = "#283149";
+//         getUndo.innerHTML = " "
+//         getUndo.style.cursor = "default"
+//     } else {
+//         getUndo.style.backgroundColor = "#404B69";
+//         getUndo.innerHTML = "undo"
+//         getUndo.style.cursor = "pointer"
+//     }
+// }
+
 let undoAnim = function() {
     let getUndo = document.querySelector("#undo");
     if (arr.length == 0){
-        getUndo.style.backgroundColor = "#283149";
-        getUndo.innerHTML = " "
-        getUndo.style.cursor = "default"
+        getUndo.style.visibility = 'hidden';
     } else {
-        getUndo.style.backgroundColor = "#404B69";
-        getUndo.innerHTML = "undo"
-        getUndo.style.cursor = "pointer"
+        getUndo.style.visibility = 'visible';
+        // getUndo.innerHTML = "undo"
     }
 }
 
@@ -78,5 +89,4 @@ let display = function(divId,num) {
 let history = function(num) {
     document.querySelector("#history").innerHTML = arr.join(" ");
 }
-
 
