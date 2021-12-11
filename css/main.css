@@ -19,6 +19,7 @@ div{
 }
 
 .topBox{
+    margin-bottom: 3vw;
     display: flex;
     flex-direction: column;
     font-family: 'Noto Sans Mono', monospace;
@@ -32,9 +33,12 @@ div{
 }
 
 #history{
+    display: flex;
+    flex-direction: column-reverse;
     height: 40vw;
     border-top-left-radius: 5vw;
-    border-top-right-radius: 5vw;
+    border-top-right-radius: 2px;
+    overflow-y: scroll;
 }
 
 #result{
@@ -43,34 +47,6 @@ div{
     font-size: xx-large;
     border-bottom-left-radius: 5vw;
     border-bottom-right-radius: 5vw;
-}
-
-.splBtn{
-    margin: 2vw auto 0 auto;
-    height: 28vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #283149;
-    border-radius: 13vw;
-}
-
-.splBtn div{
-    cursor: pointer;
-    margin: 2vw 1.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24vw;
-    height: 24vw;
-    border-radius: 50%;
-    font-family: 'Fira Mono', monospace;
-}
-
-.clrBtn{
-    background-color: #DA0463;
-    font-size: large;
-    font-weight: 500;
 }
 
 #status{
@@ -84,7 +60,7 @@ div{
     font-weight: 200;
 }
 
-.longflexN{
+.longflex{
     width: 96vw;
     height: 28vw;
     display: flex;
@@ -93,7 +69,8 @@ div{
     background-color: #283149;
 }
 
-.numBtn{
+button.numBtn{
+    position: relative;
     cursor: pointer;
     margin: 0 1.5vw;
     width: 24vw;
@@ -107,6 +84,55 @@ div{
     font-family: 'Fira Mono', monospace;
     font-size: large;
     font-weight: 200;
+    overflow: hidden;
+    transition: background 400ms;
+    outline: 0;
+    border: 0;
+  }
+
+button.acBtn{
+    background-color: #DA0463; !important
 }
 
+button.sub, button.sum {
+    font-size: xx-large;
+    overflow: visible;
+}
+
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 400ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+    to {
+      transform: scale(2);
+      opacity: 0;
+    }
+}
+
+
+
 /*---------------------------test classes-----------------------*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 60px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #DBEDF3; 
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DBEDF3; 
+    border-radius: 2px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #DBEDF3;
+}

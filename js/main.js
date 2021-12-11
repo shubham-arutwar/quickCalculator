@@ -1,8 +1,6 @@
 let total = 0, val , x = true, arr=[];
 
-
 let  calc = function(val) {
-    enableUndo();
     x ? total = total + val : total = total - val;
 
     if (x == true) {
@@ -13,18 +11,25 @@ let  calc = function(val) {
         arr.push(val);
     }
     // (x == true) ? arr.push(`+ ${val}`) : arr.push(`- ${val}`); //arr=[`+ ${val}`,...arr]
+    undoAnim();
     display("#result",total);
     history();
 }
 
-let sw = function() {
-    if (x == true) {
-        x = false;
-        display("#status","-");
-    } else {
-        x = true;
-        display("#status","+");
-    }   
+var animSub = function() {
+    let getSum = document.querySelector(".sum");
+    let getSub = document.querySelector(".sub");
+    x = false;
+    getSum.style.backgroundColor = "#404B69";
+    getSub.style.backgroundColor = "#283149";
+}
+
+var animSum = function() {
+    let getSum = document.querySelector(".sum");
+    let getSub = document.querySelector(".sub");
+    x = true;
+    getSum.style.backgroundColor = "#283149";
+    getSub.style.backgroundColor = "#404B69";
 }
 
 let clr = function() {
@@ -36,32 +41,34 @@ let clr = function() {
 
 let undo = function() {
     let tempNum, tempOpp;
-    tempNum = arr.pop();
-    tempOpp = arr.pop();
-    if (total == 0) {
-        
+    
+    if (arr.length === 0) {
+
     } else {
+        tempNum = arr.pop();
+        tempOpp = arr.pop();
         if (tempOpp == "+") {
             total = total - tempNum;
         } else {
             total = total + tempNum;
         }
     }
-
-    disableUndo();
+    undoAnim();
     display("#result",total);
     history();
 }
 
-let disableUndo = function() {
-    if (total == 0){
-        console.log("total is zero");
-        display("#undo"," ");
+let undoAnim = function() {
+    let getUndo = document.querySelector("#undo");
+    if (arr.length == 0){
+        getUndo.style.backgroundColor = "#283149";
+        getUndo.innerHTML = " "
+        getUndo.style.cursor = "default"
+    } else {
+        getUndo.style.backgroundColor = "#404B69";
+        getUndo.innerHTML = "undo"
+        getUndo.style.cursor = "pointer"
     }
-}
-
-let enableUndo = function() {
-    display("#undo","undo")
 }
 
 let display = function(divId,num) {
@@ -71,3 +78,5 @@ let display = function(divId,num) {
 let history = function(num) {
     document.querySelector("#history").innerHTML = arr.join(" ");
 }
+
+
