@@ -23,16 +23,3 @@ const buttons = document.getElementsByTagName("button");
 for (const button of buttons) {
   button.addEventListener("click", createRipple);
 }
-
-$(document).on('touchstart', function(e) {
-    if (e.target.nodeName !== 'INPUT') {
-        e.preventDefault();
-    }
-});
-
-// prevent scrolling from within input field
-$(document).on('touchmove', function(e) {
-    if (e.target.nodeName == 'INPUT') {
-        e.preventDefault();
-    }
-});

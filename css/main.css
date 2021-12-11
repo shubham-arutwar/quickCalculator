@@ -35,7 +35,7 @@ div{
 #history{
     display: flex;
     flex-direction: column-reverse;
-    height: 60vw;
+    height: 40vw;
     border-top-left-radius: 5vw;
     border-top-right-radius: 5vw;
     overflow-y: auto;
@@ -112,6 +112,11 @@ span.ripple {
       transform: scale(2);
       opacity: 0;
     }
+}
+
+#undo{
+    transition: ease-in-out;
+    transition-duration: 300ms;
 }
 
 /*---------------------------test classes-----------------------*/
