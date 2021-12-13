@@ -117,6 +117,7 @@ span.ripple {
 #undo{
     transition: ease-in-out;
     transition-duration: 300ms;
+    visibility: hidden;
 }
 
 /*---------------------------test classes-----------------------*/
