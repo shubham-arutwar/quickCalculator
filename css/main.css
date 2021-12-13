@@ -69,6 +69,13 @@ div{
     background-color: #283149;
 }
 
+
+#undo{
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    visibility: hidden;
+}
+
 button.numBtn{
     position: relative;
     cursor: pointer;
@@ -112,12 +119,6 @@ span.ripple {
       transform: scale(2);
       opacity: 0;
     }
-}
-
-#undo{
-    transition: ease-in-out;
-    transition-duration: 300ms;
-    visibility: hidden;
 }
 
 /*---------------------------test classes-----------------------*/
