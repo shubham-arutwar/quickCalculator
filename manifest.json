@@ -2,7 +2,7 @@
     "name": "Quick Calculator",
     "short_name": "quickCalc",
     "start_url": "/index.html",
-    "display": "minimal-ui",
+    "display": "standalone",
     "background_color": "#283149",
     "theme_color": "#283149",
     "orientation": "portrait-primary",
