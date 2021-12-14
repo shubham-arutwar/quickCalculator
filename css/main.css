@@ -121,8 +121,6 @@ span.ripple {
     }
 }
 
-/*---------------------------test classes-----------------------*/
-
 ::-webkit-scrollbar {
     width: 5px;
     height: 60px;
@@ -141,3 +139,5 @@ span.ripple {
 ::-webkit-scrollbar-thumb:hover {
     background: #DA0463;
 }
+
+/*---------------------------test classes-----------------------*/
